@@ -44,7 +44,7 @@
             }
     ?>
     <form action="login.php" method="post">
-        <h1>test</h1>
+        <!-- <h1>test</h1> -->
         Username: <input type="text" name="txtUser" id="">
         Password: <input type="password" name="txtPass1" id="">
         <button type="submit">Login</button>
