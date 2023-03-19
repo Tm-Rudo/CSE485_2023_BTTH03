@@ -1,10 +1,10 @@
 <?php
     session_start();
     if(isset($_SESSION['user']) && isset($_SESSION['role'])){
-        if($_SESSION['role'] == 'admin'){
-            header("Location: admin.php");
-        }else{
+        if($_SESSION['role'] != 'admin'){
             header("Location: member.php");
+        }else{
+            header("Location: admin.php");
         }
         
     }else{
